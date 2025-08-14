@@ -5,8 +5,8 @@ import './App.css'
 
 import { useState } from 'react';
 import axios from 'axios';
-import WeatherCard from './components/WeatherCard';
-import type { WeatherData } from './types/Weather';
+import WeatherCard from './components/weatherCard';
+import type { WeatherData } from './types/weather';
 
 function App() {
   const [city, setCity] = useState('');

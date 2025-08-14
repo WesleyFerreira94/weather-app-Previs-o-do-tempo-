@@ -13,7 +13,7 @@ function App() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [error, setError] = useState('');
 
-  const apiKey = 'f762dad90b6043f1c91de83db688199b';
+  const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   const fetchWeather = async () => {
     try {

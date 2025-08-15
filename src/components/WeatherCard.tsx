@@ -5,10 +5,12 @@ interface Props {
   data: WeatherData;
 }
 
-const WeatherCard: React.FC<Props> = ({ data }) => {
+/*const WeatherCard: React.FC<Props> = ({ data }) => {
   const { name, main, weather } = data;
   const { temp } = main;
-  const { description, icon } = weather[0];
+  //const { description, icon } = weather[0];
+  const { description, icon } = weather?.[0] ?? { description: '', icon: '' };
+
 
   return (
     <div style={{ marginTop: '20px' }}>
@@ -21,6 +23,25 @@ const WeatherCard: React.FC<Props> = ({ data }) => {
       />
     </div>
   );
+};*/
+
+const WeatherCard: React.FC<Props> = ({ data }) => {
+  const { location, current } = data;
+  const { name, country } = location;
+  const { temp_c, condition } = current;
+
+  return (
+    <div style={{ marginTop: '20px' }}>
+      <h2>{name}, {country}</h2>
+      <p>{condition.text}</p>
+      <p>Temperatura: {temp_c}°C</p>
+      <img
+        src={condition.icon}
+        alt="Ícone do clima"
+      />
+    </div>
+  );
 };
+
 
 export default WeatherCard;

@@ -64,6 +64,7 @@ const App: React.FC = () => {
   const [error, setError] = useState('');
 
   const apiKey = import.meta.env.VITE_WEATHERAPI_KEY;
+  console.log('Chave da API:', apiKey);
 
   const fetchWeather = async () => {
     try {

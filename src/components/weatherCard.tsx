@@ -1,3 +1,6 @@
+// Componente que exibe as informações do clima.
+// Recebe dados como temperatura, condição do tempo e cidade via props.
+
 import React from 'react';
 import type { WeatherData } from '../types/weather';
 

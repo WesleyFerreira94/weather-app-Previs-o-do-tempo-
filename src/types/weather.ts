@@ -1,14 +1,3 @@
-/*export type WeatherData = {
-  name: string;
-  main: {
-    temp: number;
-  };
-  weather: {
-    description: string;
-    icon: string;
-  }[];
-}*/
-
 export interface WeatherData {
   location: {
     name: string;

@@ -1,23 +1,3 @@
-/*import React from 'react';
-
-interface WeatherCardProps {
-  temperature: number;
-  condition: string;
-  city: string;
-}
-
-const WeatherCard: React.FC<WeatherCardProps> = ({ temperature, condition, city }) => {
-  return (
-    <div style={{ padding: '1rem', border: '1px solid #ccc', borderRadius: '8px' }}>
-      <h2>{city}</h2>
-      <p>{condition}</p>
-      <h3>{temperature}°C</h3>
-    </div>
-  );
-};
-
-export default WeatherCard;*/
-
 import React from 'react';
 import type { WeatherData } from '../types/weather';
 

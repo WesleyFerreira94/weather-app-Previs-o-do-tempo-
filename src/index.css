@@ -1,3 +1,6 @@
+/* Estilos globais da aplicação */
+/* Pode incluir reset de CSS, fontes padrão e estilos que afetam todos os componentes */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

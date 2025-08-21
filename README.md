@@ -27,7 +27,7 @@ O componente principal (`App.tsx`) gerencia os estados da aplicação e faz a re
 - [Vite](https://vitejs.dev/)
 - [Axios](https://axios-http.com/)
 - [WeatherAPI](https://www.weatherapi.com/)
-- CSS puro *(ou CSS Modules, se estiver usando)*
+- CSS
 
 ---
 
